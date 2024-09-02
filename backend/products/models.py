@@ -23,7 +23,7 @@ class Products(models.Model):
     name=models.CharField(max_length=50)
     description=models.TextField()
     price=models.FloatField(null=True,blank=True)
-    sizes=models.ManyToManyField(to=Sizes,null=True,blank=True,related_name='products')
+    sizes=models.ManyToManyField(to=Sizes,blank=True,related_name='products')
     def __str__(self) -> str:
         return self.name
 
