@@ -6,3 +6,4 @@ pillow==10.4.0
 django_restful_translator
 whitenoise
 gunicorn
+mysqlclient
